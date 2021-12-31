@@ -1,0 +1,328 @@
+GNU gdb (GDB) 7.11
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hanoi...done.
+(gdb) [C[16@reverse-i-search)`':[C[Cgdb) [K
+(gdb) break hanoi.cc:7
+Breakpoint 1 at 0x401155: file hanoi.cc, line 7.
+(gdb) r
+Starting program: /home/jiaosong/workspace/src/github/joeshow79/algorithm/the_essence_of_computing/hanoi 
+
+Breakpoint 1, Towers (n=1, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:7
+7			printf("Move disk %d from %c to %c\n", n, a, b);
+(gdb) bt
+#0  Towers (n=1, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:7
+#1  0x0000000000401191 in Towers (n=2, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#2  0x0000000000401191 in Towers (n=3, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#3  0x0000000000401191 in Towers (n=4, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#4  0x0000000000401191 in Towers (n=5, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#5  0x0000000000401191 in Towers (n=6, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#6  0x0000000000401191 in Towers (n=7, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#7  0x0000000000401191 in Towers (n=8, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#8  0x0000000000401191 in Towers (n=9, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#9  0x0000000000401191 in Towers (n=10, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#10 0x0000000000401191 in Towers (n=11, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#11 0x0000000000401191 in Towers (n=12, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#12 0x0000000000401191 in Towers (n=13, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#13 0x0000000000401191 in Towers (n=14, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#14 0x0000000000401191 in Towers (n=15, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#15 0x0000000000401191 in Towers (n=16, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#16 0x0000000000401191 in Towers (n=17, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#17 0x0000000000401191 in Towers (n=18, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#18 0x0000000000401191 in Towers (n=19, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#19 0x0000000000401191 in Towers (n=20, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#20 0x0000000000401191 in Towers (n=21, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#21 0x0000000000401191 in Towers (n=22, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#22 0x0000000000401191 in Towers (n=23, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#23 0x0000000000401191 in Towers (n=24, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#24 0x0000000000401191 in Towers (n=25, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#25 0x0000000000401191 in Towers (n=26, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#26 0x0000000000401191 in Towers (n=27, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#27 0x0000000000401191 in Towers (n=28, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#28 0x0000000000401191 in Towers (n=29, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#29 0x0000000000401191 in Towers (n=30, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#30 0x0000000000401191 in Towers (n=31, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#31 0x0000000000401191 in Towers (n=32, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#32 0x0000000000401191 in Towers (n=33, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#33 0x0000000000401191 in Towers (n=34, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#34 0x0000000000401191 in Towers (n=35, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#35 0x0000000000401191 in Towers (n=36, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#36 0x0000000000401191 in Towers (n=37, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#37 0x0000000000401191 in Towers (n=38, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#38 0x0000000000401191 in Towers (n=39, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#39 0x0000000000401191 in Towers (n=40, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#40 0x0000000000401191 in Towers (n=41, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#41 0x0000000000401191 in Towers (n=42, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#42 0x0000000000401191 in Towers (n=43, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#43 0x0000000000401191 in Towers (n=44, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#44 0x0000000000401191 in Towers (n=45, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#45 0x0000000000401191 in Towers (n=46, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#46 0x0000000000401191 in Towers (n=47, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#47 0x0000000000401191 in Towers (n=48, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#48 0x0000000000401191 in Towers (n=49, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#49 0x0000000000401191 in Towers (n=50, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#50 0x0000000000401191 in Towers (n=51, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#51 0x0000000000401191 in Towers (n=52, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#52 0x0000000000401191 in Towers (n=53, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#53 0x0000000000401191 in Towers (n=54, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#54 0x0000000000401191 in Towers (n=55, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#55 0x0000000000401191 in Towers (n=56, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#56 0x0000000000401191 in Towers (n=57, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#57 0x0000000000401191 in Towers (n=58, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#58 0x0000000000401191 in Towers (n=59, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#59 0x0000000000401191 in Towers (n=60, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#60 0x0000000000401191 in Towers (n=61, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#61 0x0000000000401191 in Towers (n=62, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#62 0x0000000000401191 in Towers (n=63, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#63 0x0000000000401191 in Towers (n=64, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#64 0x0000000000401204 in main (argc=1, argv=0x7fffffffd188) at hanoi.cc:17
+(gdb) frame[K[K[K[K[Klist
+2	
+3	// a: src
+4	// b: dst
+5	void Towers(int n,char a,char t,char b){
+6		if(n==1){
+7			printf("Move disk %d from %c to %c\n", n, a, b);
+8		}
+9		else{
+10			Towers(n-1,a,b,t);
+11			printf("Move disk %d from %c to %c\n", n, a, b);
+(gdb) b[Kframe 54
+#54 0x0000000000401191 in Towers (n=55, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+10			Towers(n-1,a,b,t);
+(gdb) list
+5	void Towers(int n,char a,char t,char b){
+6		if(n==1){
+7			printf("Move disk %d from %c to %c\n", n, a, b);
+8		}
+9		else{
+10			Towers(n-1,a,b,t);
+11			printf("Move disk %d from %c to %c\n", n, a, b);
+12			Towers(n-1,t,b,a);
+13		}
+14	}
+(gdb) ps
+(gdb) help
+List of classes of commands:
+
+aliases -- Aliases of other commands
+breakpoints -- Making program stop at certain points
+data -- Examining data
+files -- Specifying and examining files
+internals -- Maintenance commands
+obscure -- Obscure features
+running -- Running the program
+stack -- Examining the stack
+status -- Status inquiries
+support -- Support facilities
+tracepoints -- Tracing of program execution without stopping the program
+user-defined -- User-defined commands
+
+Type "help" followed by a class name for a list of commands in that class.
+Type "help all" for the list of all commands.
+Type "help" followed by command name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+(gdb) stack
+(gdb) help stack
+Examining the stack.
+The stack is made up of stack frames.  Gdb assigns numbers to stack frames
+counting from zero for the innermost (currently executing) frame.
+
+At any time gdb identifies one frame as the "selected" frame.
+Variable lookups are done with respect to the selected frame.
+When the program being debugged stops, gdb selects the innermost frame.
+The commands below can be used to select other frames by number or address.
+
+List of commands:
+
+backtrace -- Print backtrace of all stack frames
+bt -- Print backtrace of all stack frames
+down -- Select and print stack frame called by this one
+frame -- Select and print a stack frame
+return -- Make selected stack frame return to its caller
+select-frame -- Select a stack frame without printing anything
+up -- Select and print stack frame that called this one
+
+Type "help" followed by command name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+(gdb) 
+Examining the stack.
+The stack is made up of stack frames.  Gdb assigns numbers to stack frames
+counting from zero for the innermost (currently executing) frame.
+
+At any time gdb identifies one frame as the "selected" frame.
+Variable lookups are done with respect to the selected frame.
+When the program being debugged stops, gdb selects the innermost frame.
+The commands below can be used to select other frames by number or address.
+
+List of commands:
+
+backtrace -- Print backtrace of all stack frames
+bt -- Print backtrace of all stack frames
+down -- Select and print stack frame called by this one
+frame -- Select and print a stack frame
+return -- Make selected stack frame return to its caller
+select-frame -- Select a stack frame without printing anything
+up -- Select and print stack frame that called this one
+
+Type "help" followed by command name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+(gdb) 
+Examining the stack.
+The stack is made up of stack frames.  Gdb assigns numbers to stack frames
+counting from zero for the innermost (currently executing) frame.
+
+At any time gdb identifies one frame as the "selected" frame.
+Variable lookups are done with respect to the selected frame.
+When the program being debugged stops, gdb selects the innermost frame.
+The commands below can be used to select other frames by number or address.
+
+List of commands:
+
+backtrace -- Print backtrace of all stack frames
+bt -- Print backtrace of all stack frames
+down -- Select and print stack frame called by this one
+frame -- Select and print a stack frame
+return -- Make selected stack frame return to its caller
+select-frame -- Select a stack frame without printing anything
+up -- Select and print stack frame that called this one
+
+Type "help" followed by command name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+(gdb) frame 54
+#54 0x0000000000401191 in Towers (n=55, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+10			Towers(n-1,a,b,t);
+(gdb) bt
+#0  Towers (n=1, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:7
+#1  0x0000000000401191 in Towers (n=2, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#2  0x0000000000401191 in Towers (n=3, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#3  0x0000000000401191 in Towers (n=4, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#4  0x0000000000401191 in Towers (n=5, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#5  0x0000000000401191 in Towers (n=6, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#6  0x0000000000401191 in Towers (n=7, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#7  0x0000000000401191 in Towers (n=8, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#8  0x0000000000401191 in Towers (n=9, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#9  0x0000000000401191 in Towers (n=10, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#10 0x0000000000401191 in Towers (n=11, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#11 0x0000000000401191 in Towers (n=12, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#12 0x0000000000401191 in Towers (n=13, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#13 0x0000000000401191 in Towers (n=14, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#14 0x0000000000401191 in Towers (n=15, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#15 0x0000000000401191 in Towers (n=16, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#16 0x0000000000401191 in Towers (n=17, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#17 0x0000000000401191 in Towers (n=18, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#18 0x0000000000401191 in Towers (n=19, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#19 0x0000000000401191 in Towers (n=20, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#20 0x0000000000401191 in Towers (n=21, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#21 0x0000000000401191 in Towers (n=22, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#22 0x0000000000401191 in Towers (n=23, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#23 0x0000000000401191 in Towers (n=24, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#24 0x0000000000401191 in Towers (n=25, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#25 0x0000000000401191 in Towers (n=26, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#26 0x0000000000401191 in Towers (n=27, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#27 0x0000000000401191 in Towers (n=28, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#28 0x0000000000401191 in Towers (n=29, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#29 0x0000000000401191 in Towers (n=30, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#30 0x0000000000401191 in Towers (n=31, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#31 0x0000000000401191 in Towers (n=32, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#32 0x0000000000401191 in Towers (n=33, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#33 0x0000000000401191 in Towers (n=34, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#34 0x0000000000401191 in Towers (n=35, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#35 0x0000000000401191 in Towers (n=36, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#36 0x0000000000401191 in Towers (n=37, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#37 0x0000000000401191 in Towers (n=38, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#38 0x0000000000401191 in Towers (n=39, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#39 0x0000000000401191 in Towers (n=40, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#40 0x0000000000401191 in Towers (n=41, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#41 0x0000000000401191 in Towers (n=42, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#42 0x0000000000401191 in Towers (n=43, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#43 0x0000000000401191 in Towers (n=44, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#44 0x0000000000401191 in Towers (n=45, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#45 0x0000000000401191 in Towers (n=46, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#46 0x0000000000401191 in Towers (n=47, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#47 0x0000000000401191 in Towers (n=48, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#48 0x0000000000401191 in Towers (n=49, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#49 0x0000000000401191 in Towers (n=50, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#50 0x0000000000401191 in Towers (n=51, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#51 0x0000000000401191 in Towers (n=52, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#52 0x0000000000401191 in Towers (n=53, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#53 0x0000000000401191 in Towers (n=54, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#54 0x0000000000401191 in Towers (n=55, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#55 0x0000000000401191 in Towers (n=56, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#56 0x0000000000401191 in Towers (n=57, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#57 0x0000000000401191 in Towers (n=58, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#58 0x0000000000401191 in Towers (n=59, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#59 0x0000000000401191 in Towers (n=60, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#60 0x0000000000401191 in Towers (n=61, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#61 0x0000000000401191 in Towers (n=62, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#62 0x0000000000401191 in Towers (n=63, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+#63 0x0000000000401191 in Towers (n=64, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+#64 0x0000000000401204 in main (argc=1, argv=0x7fffffffd188) at hanoi.cc:17
+(gdb)  [Kq[Ke[Khelp stack
+Examining the stack.
+The stack is made up of stack frames.  Gdb assigns numbers to stack frames
+counting from zero for the innermost (currently executing) frame.
+
+At any time gdb identifies one frame as the "selected" frame.
+Variable lookups are done with respect to the selected frame.
+When the program being debugged stops, gdb selects the innermost frame.
+The commands below can be used to select other frames by number or address.
+
+List of commands:
+
+backtrace -- Print backtrace of all stack frames
+bt -- Print backtrace of all stack frames
+down -- Select and print stack frame called by this one
+frame -- Select and print a stack frame
+return -- Make selected stack frame return to its caller
+select-frame -- Select a stack frame without printing anything
+up -- Select and print stack frame that called this one
+
+Type "help" followed by command name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+(gdb) down
+#53 0x0000000000401191 in Towers (n=54, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+10			Towers(n-1,a,b,t);
+(gdb) down
+#52 0x0000000000401191 in Towers (n=53, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+10			Towers(n-1,a,b,t);
+(gdb) down
+#51 0x0000000000401191 in Towers (n=52, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+10			Towers(n-1,a,b,t);
+(gdb) down
+#50 0x0000000000401191 in Towers (n=51, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+10			Towers(n-1,a,b,t);
+(gdb) up
+#51 0x0000000000401191 in Towers (n=52, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+10			Towers(n-1,a,b,t);
+(gdb) up
+#52 0x0000000000401191 in Towers (n=53, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+10			Towers(n-1,a,b,t);
+(gdb) up
+#53 0x0000000000401191 in Towers (n=54, a=65 'A', t=84 'T', b=66 'B') at hanoi.cc:10
+10			Towers(n-1,a,b,t);
+(gdb) up
+#54 0x0000000000401191 in Towers (n=55, a=65 'A', t=66 'B', b=84 'T') at hanoi.cc:10
+10			Towers(n-1,a,b,t);
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 25554] will be killed.
+
+Quit anyway? (y or n) y
